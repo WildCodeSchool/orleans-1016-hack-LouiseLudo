@@ -1,3 +1,4 @@
+<div class="meteo">
 <?php
 
 
@@ -31,12 +32,15 @@ function afficherPlaylist()
     else return 'WEATHERMOOD vous affiche une playlist en fonction de la météo';
 }
 
+echo 'in the city of ' .$tab['name'];
 echo 'the weather is : ' .$tab['weather'][0]['main'];
 echo 'the temperature is : ' .(($tab['main']['temp']-273.15));
 echo 'the humidity is : ' .$tab['main']['humidity'].'%';
+echo 'the minimal temperature is : ' .(($tab['main']['temp_min']-273.15));
+echo 'the maximal temperature is : ' .(($tab['main']['temp_max']-273.15));
 
-var_dump($tab);
 
     echo afficherPlaylist();
 
 ?>
+</div>
