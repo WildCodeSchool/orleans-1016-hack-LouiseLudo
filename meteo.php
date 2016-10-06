@@ -6,7 +6,7 @@ function afficherPlaylist()
 {
     if (empty($_GET["ville"]) ) {
 
-        return "WEATHERMOOD vous affiche une playlist en fonction de la météo.";
+        return "";
     }
     elseif ($_GET["ville"] === null) {
         return "Error : veuillez entrer une ville dans le champ ci-dessous.";
@@ -36,20 +36,34 @@ function afficherPlaylist()
     }
 
 }
-$meteo= file_get_contents('http://api.openweathermap.org/data/2.5/weather?q='.$_GET["ville"].'&appid=f89a131ce3d17d939fff1e4e7fa2315d');
-$tab = json_decode($meteo, true);
 
-echo 'in the city of ' .$tab['name'];
-echo 'the weather is : ' .$tab['weather'][0]['main'];
-echo 'the temperature is : ' .(($tab['main']['temp']-273.15));
-echo 'the humidity is : ' .$tab['main']['humidity'].'%';
-echo 'the minimal temperature is : ' .(($tab['main']['temp_min']-273.15));
-echo 'the maximal temperature is : ' .(($tab['main']['temp_max']-273.15));
+function afficherInfo()
+    {
+        if (empty($_GET["ville"]) )
+        {
+        return "";
+        }
+        elseif ($_GET["ville"] === null)
+        {
+            return "";
+        }
 
+        $meteo= file_get_contents('http://api.openweathermap.org/data/2.5/weather?q='.$_GET["ville"].'&appid=f89a131ce3d17d939fff1e4e7fa2315d');
+        $tab = json_decode($meteo, true);
 
-    echo afficherPlaylist();
+        return'in the city of ' .$tab['name']. '<br/>'.
+         'the weather is : ' .$tab['weather'][0]['main'] . '<br/>'.
+         'the temperature is : ' .(($tab['main']['temp']-273.15)) . '<br/>'.
+         'the humidity is : ' .$tab['main']['humidity'].'%' . '<br/>'.
+         'the minimal temperature is : ' .(($tab['main']['temp_min']-273.15)) . '<br/>'.
+         'the maximal temperature is : ' .(($tab['main']['temp_max']-273.15));
+    }
+
+echo afficherPlaylist();
+echo afficherInfo();
 
 ?>
+
 </div>
 
 
