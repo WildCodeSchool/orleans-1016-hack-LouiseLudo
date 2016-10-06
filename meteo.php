@@ -24,7 +24,10 @@ function afficherPlaylist()
         return '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=79587491&app_id=1"
                 width="700" height="240"></iframe>';
     }
-
+    elseif ($tab['weather'][0]['main'] == 'Snow') {
+        return '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=1495224591&app_id=1" 
+                width="700" height="240"></iframe>';
+    }
 }
 var_dump($tab);
 echo afficherPlaylist();
