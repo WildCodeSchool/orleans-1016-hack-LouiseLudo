@@ -16,11 +16,16 @@
 <body>
     <div class="container-fluid">
 
+
         <div class="row-formulaire col-lg-offset-4 col-lg-4">
             <?php include ('Formulaire.php') ?>
         </div>
 
         <?php include ('meteo.php')?>
+
+
+
+        
 
     </div>
 </body>
