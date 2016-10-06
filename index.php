@@ -4,7 +4,9 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet_formulaire.css">
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js" ></script>
     <script src="http://cdn-files.deezer.com/js/min/dz.js"></script>
     <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
 
@@ -12,9 +14,11 @@
 
 </head>
 <body>
+    <div class="container-fluid">
 
-    <?php include ('deezerAPI.php') ?>
     <?php include ('Formulaire.php') ?>
     <?php include ('meteo.php')?>
+        
+    </div>
 </body>
 </html>
