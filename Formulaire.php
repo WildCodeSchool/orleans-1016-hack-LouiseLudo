@@ -7,7 +7,7 @@
     <input type="text" name="ville" placeholder="Taper votre ville de résidence ici" class="input_ville"/>
     <input type="submit" value="Envoyer"/> -->
 
-<form  method = "GET">
+<form  method = "GET" action="meteo.php">
     Ville: <input type = "text" name = "ville" placeholder="Placez votre ville" />
     <input type="submit" value="Envoyer"/>
 

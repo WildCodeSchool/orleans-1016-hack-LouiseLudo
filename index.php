@@ -17,7 +17,7 @@
     <div class="container-fluid">
 
     <?php include ('Formulaire.php') ?>
-    <?php include ('meteo.php')?>
+
         
     </div>
 </body>
