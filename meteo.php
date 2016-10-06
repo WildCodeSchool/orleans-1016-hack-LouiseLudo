@@ -23,16 +23,16 @@ function afficherPlaylist()
 
     elseif (trim($tab['weather'][0]['main'] == 'Clear')) {
         return '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=1118430371&app_id=1" 
-                width="700" height="240"></iframe>';
+                width="500" height="240"></iframe>';
     }
 
     elseif (trim($tab['weather'][0]['main'] == 'Clouds')) {
         return '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=79587491&app_id=1"
-                width="700" height="240"></iframe>';
+                width="500" height="240"></iframe>';
     }
     elseif (trim($tab['weather'][0]['main'] == 'Snow')) {
         return '<iframe scrolling="no" frameborder="0" allowTransparency="true" src="http://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=playlist&id=1495224591&app_id=1" 
-                width="700" height="240"></iframe>';
+                width="500" height="240"></iframe>';
     }
 
 }
@@ -53,14 +53,14 @@ function afficherInfo()
 
         return'in the city of ' .$tab['name']. '<br/>'.
          'the weather is : ' .$tab['weather'][0]['main'] . '<br/>'.
-         'the temperature is : ' .(($tab['main']['temp']-273.15)) . '<br/>'.
+         'the temperature is : ' .(($tab['main']['temp']-273.15)) . '°C<br/>'.
          'the humidity is : ' .$tab['main']['humidity'].'%' . '<br/>'.
-         'the minimal temperature is : ' .(($tab['main']['temp_min']-273.15)) . '<br/>'.
-         'the maximal temperature is : ' .(($tab['main']['temp_max']-273.15));
+         'the minimal temperature is : ' .(($tab['main']['temp_min']-273.15)) . '°C<br/>'.
+         'the maximal temperature is : ' .(($tab['main']['temp_max']-273.15)).'°C';
     }
 
-echo afficherPlaylist();
-echo afficherInfo();
+ echo '<div id="playlist" class=" col-lg-offset-1 col-lg-5">'. afficherPlaylist().'</div>';
+echo '<div id="info" class=" col-lg-6">'. afficherInfo().'</div>';
 
 ?>
 
