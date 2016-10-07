@@ -32,7 +32,7 @@
 
         if ((!isset($_GET["ville"])) || (!($_GET["ville"])))
         {
-            echo '<div class="row">
+            echo '<div class="row ">
                 <div class=" text1 col-lg-6">
                     <h2>
                         <u>   
