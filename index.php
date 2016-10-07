@@ -27,7 +27,7 @@
             </div>
         </div>
         <?php
-        if (!($_GET["ville"]))
+        if ((!isset($_GET["ville"])) || empty($_GET["ville"]) )
         {
             echo '<div class="row">
                 <div class=" text1 col-lg-6">
@@ -71,7 +71,4 @@
                 </div>
             </div>
         </footer>
-
-
-
 </html>

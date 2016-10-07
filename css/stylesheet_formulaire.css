@@ -3,9 +3,10 @@ body{
 }
 #titre{
     font-size:85px;
+
 }
 #info{
-    padding-top: 70px;
+    padding-top: 60px;
     text-align: center;
     line-height: 1.5em;
     font-family: 'Dosis', sans-serif;
@@ -20,6 +21,7 @@ body{
     width: 500px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.7);
+
 
 }
 #banniere{
