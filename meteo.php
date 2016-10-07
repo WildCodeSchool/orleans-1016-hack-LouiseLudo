@@ -39,7 +39,9 @@ function afficherPlaylist()
 
 function afficherInfo()
     {
+
         if (empty($_GET["ville"]))
+
         {
         return "";
         }
