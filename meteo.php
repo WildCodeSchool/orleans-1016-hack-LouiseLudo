@@ -1,4 +1,4 @@
-<div class="meteo">
+
 <?php
 
 
@@ -64,7 +64,7 @@ echo '<div id="info" class=" col-lg-6">'. afficherInfo().'</div>';
 
 ?>
 
-</div>
+
 
 
 

@@ -53,8 +53,25 @@
           ?>
             <?php include ('meteo.php')?>
 
-        </div>
-
     </div>
 </body>
+        <footer>
+            <div class="row">
+                <div class="col-lg-offset-4 col-lg-1">
+                   <a href="https://www.facebook.com"> <img src="wg_stained_sm/facebook.png" alt="logo facebook">  </a>
+                </div>
+                <div class="col-lg-1">
+                   <a href="https://www.twitter.com"> <img src="wg_stained_sm/twitter.png" alt="logo twitter"> </a>
+                </div>
+                <div class="col-lg-1">
+                    <a href="https://www.linkedin.com"> <img src="wg_stained_sm/linkedin.png" alt="logo linkedin"> </a>
+                </div>
+                <div class="col-lg-5">
+                    <a href="https://www.tumblr.com"> <img src="wg_stained_sm/tumblr.png" alt="logo tumblr"> </a>
+                </div>
+            </div>
+        </footer>
+
+
+
 </html>
