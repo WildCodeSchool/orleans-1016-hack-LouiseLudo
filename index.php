@@ -16,11 +16,11 @@
 <body>
     <div class="container-fluid">
         <div class="jumbotron">
-            <h1 id="titre">WEATHERMOOD</h1>
+            <h1 id="titre">WEATHERMOOD <span class=" titre2  "> Play the Weather's music</span></h1>
             <div class="row-formulaire">
                 <span style="font-family: 'Dosis', sans-serif;">
                 <form  method = "GET" action="index.php" class="col-lg-offset-3 col-lg-9">
-                    <input type = "text" name = "ville" placeholder="Place a city" id="search" />
+                    <input type = "text" name = "ville" placeholder="Place a city here" id="search" />
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </span>
                 </form>
@@ -33,12 +33,12 @@
                 <div class=" text1 col-lg-6">
                     <h2>Music</h2>
                     <img class="musiquedessin img-responsive" src="http://www.gif-maniac.com/gifs/51/50514.gif" alt="musique">
-                    <p>Music is always connected to the weather</p>
+                    <p class="anime">Music is always connected to the weather</p>
                 </div>
                 <div class=" text2 col-lg-6">
                     <h2>Weather in the World </h2>
                     <img class="sundessin img-responsive" src="http://www.icone-gif.com/gif/espace/soleil/1reflect.gif" alt="sun">
-                    <p>Find the world\'s weather in one click!</p>
+                    <p class="anime">Find the world\'s weather in one click!</p>
                 </div>
             </div>';
         }

@@ -19,6 +19,7 @@ body{
     width: 500px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.7);
+    
 }
 #banniere{
     height: 250px;
@@ -57,4 +58,13 @@ body{
     display: block;
     margin: auto;
     margin-top: 30px;
+}
+.anime{
+    font-size:25px;
+}
+.titre2{
+    font-size:35px;
+    font-weight: 900;
+    color: #E77265;
+
 }

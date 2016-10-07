@@ -51,10 +51,10 @@ function afficherInfo()
         $meteo= file_get_contents('http://api.openweathermap.org/data/2.5/weather?q='.$_GET["ville"].'&appid=f89a131ce3d17d939fff1e4e7fa2315d');
         $tab = json_decode($meteo, true);
 
-        return'in the city of ' .$tab['name']. '<br/>'.
+        return'In the city of ' .$tab['name']. '<br/>'.
          'the weather is : ' .$tab['weather'][0]['main'] . '<br/>'.
          'the temperature is : ' .(($tab['main']['temp']-273.15)) . '°C<br/>'.
-         'the humidity is : ' .$tab['main']['humidity'].'%' . '<br/>'.
+         'the humidity is : ' .$tab['main']['humidity'].' %' . '<br/>'.
          'the minimal temperature is : ' .(($tab['main']['temp_min']-273.15)) . '°C<br/>'.
          'the maximal temperature is : ' .(($tab['main']['temp_max']-273.15)).'°C';
     }
