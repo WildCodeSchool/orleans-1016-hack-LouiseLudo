@@ -19,15 +19,18 @@
             <h1 id="titre">WEATHERMOOD <span class=" titre2  "> Play the Weather's music</span></h1>
             <div class="row-formulaire">
                 <span id="stylesearch">
-                <form  method = "GET" action="index.php" class="col-lg-offset-3 col-lg-9">
+                <form  method = "GET" action="index.php" class="col-lg-offset-3 col-lg-9 styleform">
                     <input type = "text" name = "ville" placeholder="Place a city here" id="search" />
                     <button type="submit" class="btn btn-primary">Submit</button>
                     </span>
                 </form>
             </div>
         </div>
+
         <?php
-        if ((!isset($_GET["ville"])) || empty($_GET["ville"]) )
+
+        if ((!isset($_GET["ville"])) || (!($_GET["ville"])))
+
         {
             echo '<div class="row">
                 <div class=" text1 col-lg-6">
@@ -50,6 +53,8 @@
                 </div>
             </div>';
         }
+
+
           ?>
             <?php include ('meteo.php')?>
 
@@ -57,16 +62,16 @@
 </body>
         <footer>
             <div class="row">
-                <div class="col-lg-offset-4 col-lg-1">
+                <div class="col-xs-3 col-lg-offset-4 col-lg-1 network">
                    <a href="https://www.facebook.com"> <img src="wg_stained_sm/facebook.png" alt="logo facebook">  </a>
                 </div>
-                <div class="col-lg-1">
+                <div class="col-xs-3 col-lg-1 network">
                    <a href="https://www.twitter.com"> <img src="wg_stained_sm/twitter.png" alt="logo twitter"> </a>
                 </div>
-                <div class="col-lg-1">
+                <div class="col-xs-3 col-lg-1 network">
                     <a href="https://www.linkedin.com"> <img src="wg_stained_sm/linkedin.png" alt="logo linkedin"> </a>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-xs-3 col-lg-5 network">
                     <a href="https://www.tumblr.com"> <img src="wg_stained_sm/tumblr.png" alt="logo tumblr"> </a>
                 </div>
             </div>

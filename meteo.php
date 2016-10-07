@@ -8,9 +8,9 @@ function afficherPlaylist()
 
         return "";
     }
-    elseif ($_GET["ville"] === null) {
+   /* elseif ($_GET["ville"] === null) {
         return "Error : veuillez entrer une ville dans le champ ci-dessous.";
-    }
+    }*/
 
     $meteo= file_get_contents('http://api.openweathermap.org/data/2.5/weather?q='.$_GET["ville"].'&appid=f89a131ce3d17d939fff1e4e7fa2315d');
     $tab = json_decode($meteo, true);
@@ -39,7 +39,9 @@ function afficherPlaylist()
 
 function afficherInfo()
     {
-        if (empty($_GET["ville"])  )
+
+        if (empty($_GET["ville"]))
+
         {
         return "";
         }
@@ -59,7 +61,7 @@ function afficherInfo()
          'the maximal temperature is : ' .(($tab['main']['temp_max']-273.15)).'°C';
     }
 
- echo '<div id="playlist" class=" col-lg-offset-1 col-lg-5">'. afficherPlaylist().'</div>';
+echo '<div id="playlist" class=" col-lg-offset-1 col-lg-5">'. afficherPlaylist().'</div>';
 echo '<div id="info" class=" col-lg-6">'. afficherInfo().'</div>';
 
 ?>
