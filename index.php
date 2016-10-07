@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid">
         <div class="jumbotron">
-            <h1>Hello, world!</h1>
+            <h1>WEATHERMOOD</h1>
             <div class="row-formulaire">
                 <span style="font-family: 'Dosis', sans-serif;">
                 <form  method = "GET" action="index.php" class="col-lg-offset-3 col-lg-9">
@@ -24,14 +24,19 @@
                     </span>
                 </form>
             </div>
-
+        </div>
+        <div class="row">
+            <div class=" text1 col-lg-6">
+                AEIO
+            </div>
+            <div class=" text2 col-lg-6">
+                YOP
+            </div>
         </div>
 
+            <?php include ('meteo.php')?>
 
-
-        <?php include ('meteo.php')?>
-
-
+        </div>
 
     </div>
 </body>
