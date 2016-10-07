@@ -8,6 +8,7 @@
     <script href="http://cdn-files.deezer.com/js/min/dz.js"></script>
     <script href="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Dosis:300,400,500,700" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://images.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.M02873f977b4578b39d59302baa951c6fH0%26pid%3D15.1&f=1" />
 
     <title>WEATHERMOOD</title>
 
@@ -37,7 +38,7 @@
                 <div class=" text2 col-lg-6">
                     <h2>Weather in the World </h2>
                     <img class="sundessin img-responsive" src="http://www.icone-gif.com/gif/espace/soleil/1reflect.gif" alt="sun">
-                    <p>Find the weather in the world in one click!</p>
+                    <p>Find the world\'s weather in one click!</p>
                 </div>
             </div>';
         }
