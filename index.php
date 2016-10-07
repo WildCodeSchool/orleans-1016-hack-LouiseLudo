@@ -25,19 +25,23 @@
                 </form>
             </div>
         </div>
-        <div class="row">
-            <div class=" text1 col-lg-6">
-                <h2>Music</h2>
-                <img class="musiquedessin img-responsive" src="http://www.gif-maniac.com/gifs/51/50514.gif" alt="musique">
-                <p>Music is always connected to the weather</p>
-            </div>
-            <div class=" text2 col-lg-6">
-                <h2>Weather in the World </h2>
-                <img class="sundessin img-responsive" src="http://www.icone-gif.com/gif/espace/soleil/1reflect.gif" alt="sun">
-                <p>Find the weather in the world in one click!</p>
-            </div>
-        </div>
-
+        <?php
+        if (!($_GET["ville"]))
+        {
+            echo '<div class="row">
+                <div class=" text1 col-lg-6">
+                    <h2>Music</h2>
+                    <img class="musiquedessin img-responsive" src="http://www.gif-maniac.com/gifs/51/50514.gif" alt="musique">
+                    <p>Music is always connected to the weather</p>
+                </div>
+                <div class=" text2 col-lg-6">
+                    <h2>Weather in the World </h2>
+                    <img class="sundessin img-responsive" src="http://www.icone-gif.com/gif/espace/soleil/1reflect.gif" alt="sun">
+                    <p>Find the weather in the world in one click!</p>
+                </div>
+            </div>';
+        }
+          ?>
             <?php include ('meteo.php')?>
 
         </div>
