@@ -54,11 +54,11 @@ function afficherInfo()
         $tab = json_decode($meteo, true);
 
         return'In the city of ' .$tab['name']. '<br/>'.
-         'the weather is : ' .$tab['weather'][0]['main'] . '<br/>'.
-         'the temperature is : ' .(($tab['main']['temp']-273.15)) . '°C<br/>'.
-         'the humidity is : ' .$tab['main']['humidity'].' %' . '<br/>'.
-         'the minimal temperature is : ' .(($tab['main']['temp_min']-273.15)) . '°C<br/>'.
-         'the maximal temperature is : ' .(($tab['main']['temp_max']-273.15)).'°C';
+         'The weather is : ' .$tab['weather'][0]['main'] . '<br/>'.
+         'The temperature is : ' .(($tab['main']['temp']-273.15)) . '°C<br/>'.
+         'The humidity is : ' .$tab['main']['humidity'].' %' . '<br/>'.
+         'The minimal temperature is : ' .(($tab['main']['temp_min']-273.15)) . '°C<br/>'.
+         'The maximal temperature is : ' .(($tab['main']['temp_max']-273.15)).'°C';
     }
 
 echo '<div id="playlist" class=" col-lg-offset-1 col-lg-5">'. afficherPlaylist().'</div>';

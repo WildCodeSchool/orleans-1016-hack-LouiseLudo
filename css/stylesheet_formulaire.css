@@ -2,8 +2,9 @@ body{
     font-family: 'Dosis', sans-serif;
 }
 #titre{
-    font-size:85px;
-    padding-left: 200px;
+    font-size:105px;
+    padding-left: 150px;
+    font-weight: 900;
 
 }
 #info{
