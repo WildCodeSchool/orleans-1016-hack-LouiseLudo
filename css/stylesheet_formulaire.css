@@ -3,6 +3,7 @@ body{
 }
 #titre{
     font-size:85px;
+    padding-left: 200px;
 }
 #info{
     padding-top: 70px;
@@ -19,9 +20,10 @@ body{
 #search{
     width: 500px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
 
 }
+
 #banniere{
     height: 250px;
     width:100%;
@@ -71,7 +73,16 @@ body{
 #stylesearch{
     font-family: 'Dosis', sans-serif;
 }
+.styleform {
+    padding-left: 10%;
+}
+
 footer{
-    border-top:2px solid #3E54E7
+    border-top:1px solid dodgerblue;
+    margin-top: 150px;
+}
+
+.network {
+    padding-top: 10px;
 
 }
